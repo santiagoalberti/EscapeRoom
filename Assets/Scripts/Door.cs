@@ -10,6 +10,7 @@ public class Door : MonoBehaviour
     public Key scriptLlave;
     public bool tengoLlave;
     public AudioSource doorSound;
+    public AudioSource lockeddoorSound;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -21,13 +22,22 @@ public class Door : MonoBehaviour
     void Update()
     {
         tengoLlave = scriptLlave.laTengo;
-        if (canOpen == true && Input.GetKey(KeyCode.E) && tengoLlave == true)
+        if (canOpen == true && Input.GetKey(KeyCode.E))
         {
+            if (tengoLlave == true)
+            {
             anim.SetTrigger("OpenDoor");
             canOpen = false;
             isClosed = false;
             doorSound.Play();
+            }
+            
+            else
+            {
+            lockeddoorSound.Play();
+            }
         }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -52,6 +62,7 @@ public class Door : MonoBehaviour
         {
         anim.SetTrigger("CloseDoor");
         isClosed = true;
+        lockeddoorSound.Play();
         
         }
         
