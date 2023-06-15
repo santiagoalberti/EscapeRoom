@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     private bool isClosed = true;
     public Key scriptLlave;
     public bool tengoLlave;
+    public AudioSource doorSound;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -25,6 +26,7 @@ public class Door : MonoBehaviour
             anim.SetTrigger("OpenDoor");
             canOpen = false;
             isClosed = false;
+            doorSound.Play();
         }
     }
 
