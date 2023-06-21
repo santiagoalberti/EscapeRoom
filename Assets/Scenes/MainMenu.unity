@@ -239,7 +239,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Carlos Mansilla\r\nSantiago Alberti\r\nMaximiliano Solmonese\r\nDaniel
-    Romano\r\nLamine Mechedou\r\nRubi Garc\xEDa Alarcon\r\nHector Alvarez\r\nRicardo
+    Romano\r\nLamine Mechedou\r\nRubi Garc\xEDa Alarc\xF3n\r\nH\xE9ctor Alvarez\r\nRicardo
     Iassogna"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 728ed6bb03281df4aa0c0e1f47a9ca15, type: 2}
