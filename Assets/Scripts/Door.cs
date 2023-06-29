@@ -18,41 +18,27 @@ public class Door : MonoBehaviour
         
     }
 
+    // Update is called once per frame
     void Update()
     {
         tengoLlave = scriptLlave.laTengo;
-        if (canOpen == true && Input.GetKey(KeyCode.E) && tengoLlave == true)
+        if (canOpen == true && Input.GetKey(KeyCode.E))
         {
+            if (tengoLlave == true)
+            {
             anim.SetTrigger("OpenDoor");
             canOpen = false;
             isClosed = false;
             doorSound.Play();
-        }
-        else {
-        lockeddoorSound.Play();
-        }
-    }
-
-    // void Update()
-    // {
-    //     tengoLlave = scriptLlave.laTengo;
-    //     if (canOpen == true && Input.GetKey(KeyCode.E))
-    //     {
-    //         if (tengoLlave == true)
-    //         {
-    //         anim.SetTrigger("OpenDoor");
-    //         canOpen = false;
-    //         isClosed = false;
-    //         doorSound.Play();
-    //         }
+            }
             
-    //         else
-    //         {
-    //         lockeddoorSound.Play();
-    //         }
-    //     }
+            else
+            {
+            lockeddoorSound.Play();
+            }
+        }
         
-    // }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
