@@ -56,8 +56,7 @@ public class Pause : MonoBehaviour
     {
     pauseMenu.SetActive(false);
     activePause = false;
-        
+    Time.timeScale = 1;    
     SceneManager.LoadScene(0);
-    Time.timeScale = 1;
     }
 }
