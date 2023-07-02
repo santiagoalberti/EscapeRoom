@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneContoler : MonoBehaviour
 {
     private float timeEnlapsed;
-    private float endTime=75f;
+    private float endTime=80f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +17,10 @@ public class SceneContoler : MonoBehaviour
     void Update()
     {
         cambiarScene();
+           if (Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(2);
+        }
     }
     public void cambiarScene()
     {

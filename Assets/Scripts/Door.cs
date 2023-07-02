@@ -28,7 +28,8 @@ public class Door : MonoBehaviour
             isClosed = false;
             doorSound.Play();
         }
-        else {
+        else if (Input.GetKey(KeyCode.E) && tengoLlave == false)
+        {
         lockeddoorSound.Play();
         }
     }
