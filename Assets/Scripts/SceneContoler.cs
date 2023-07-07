@@ -9,11 +9,7 @@ public class SceneContoler : MonoBehaviour
     private float timeEnlapsed;
     private float endTime = 80f;
     private float originalTimeScale;
-    //para controlar la gameover scene
-    private float activarRip;
-    private float activarRipEnd=6f;
-    public GameObject brain;
-    public GameObject rip;
+    
     
     
     // Start is called before the first frame update
@@ -39,7 +35,7 @@ public class SceneContoler : MonoBehaviour
         {
             Time.timeScale = originalTimeScale;
         }
-        endGame();
+        
 
     }
     public void cambiarScene()
@@ -51,17 +47,7 @@ public class SceneContoler : MonoBehaviour
             SceneManager.LoadScene(2);
         }
     }
-    public void endGame()
-    {
-        activarRip += Time.deltaTime;
-        Debug.Log(activarRip);
-        if (activarRip > activarRipEnd)
-        {
-            brain.SetActive(false);
-            rip.SetActive(true);
-        }
-    }
-           
+             
     
 }
 

@@ -10,6 +10,7 @@ public class estresControl : MonoBehaviour
     private float energiaMaxima = 100f;
     private float energiaActual;
     
+    
 
     //variable para controlar la barra
     public UnityEngine.UI.Image barraVerde;
@@ -30,12 +31,14 @@ public class estresControl : MonoBehaviour
     }
     public void reducirEnergia()
     {
-        energiaActual -= 1*Time.deltaTime;
+        energiaActual -= 2f*Time.deltaTime;
         Debug.Log("tengo" + energiaActual + "de" + energiaMaxima);
         barraVerde.fillAmount = energiaActual / energiaMaxima;
         if (energiaActual <= 50f)
         {
             estallido.SetActive(true);
+            
+            
         }
         if (energiaActual <= 25f)
         {
