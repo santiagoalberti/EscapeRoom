@@ -9992,6 +9992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barraVerde: {fileID: 1163379784}
   estallido: {fileID: 440099623}
+  verSiPierde: {fileID: 0}
 --- !u!4 &1675167112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44714564d882bc34f8afa558c4bd7f77, type: 3}

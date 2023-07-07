@@ -16,6 +16,7 @@ public class LVL1Cartas : MonoBehaviour
     public AudioSource audioSourceDropKey;
     //objeto para controlar el sonido de error del panel
     public AudioSource audioSourceErrorKeyPad;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +48,9 @@ public class LVL1Cartas : MonoBehaviour
             Debug.Log(" error en codigo");
             audioSourceErrorKeyPad.Play();
             Debug.Log("sonido de error");
+            
+            
+            
         }
     }
 }
