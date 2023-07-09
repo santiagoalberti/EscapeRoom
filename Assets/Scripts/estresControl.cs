@@ -16,11 +16,14 @@ public class estresControl : MonoBehaviour
     public UnityEngine.UI.Image barraVerde;
     //variable para guardar el estallido del cerebro
     public GameObject estallido;
+    public AudioSource Latido;
+    public AudioSource Respira;
    
     // Start is called before the first frame update
     void Start()
     {
         energiaActual = energiaMaxima;
+        Latido.pitch = 1;
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class estresControl : MonoBehaviour
     {
         reducirEnergia();
         dead();
+        FX();
     }
     public void reducirEnergia()
     {
@@ -37,6 +41,7 @@ public class estresControl : MonoBehaviour
         if (energiaActual <= 50f)
         {
             estallido.SetActive(true);
+           
             
             
         }
@@ -53,6 +58,20 @@ public class estresControl : MonoBehaviour
         {
             
             SceneManager.LoadScene(3);
+        }
+    }
+    public void FX()
+    {
+        if (energiaActual>50)
+        {
+            
+            Latido.Play();
+        }
+        if (energiaActual<25)
+        {
+            Respira.Play();
+            Latido.pitch = 3;
+            
         }
     }
 
