@@ -7,7 +7,7 @@ public class LVL1Cartas : MonoBehaviour
 {
     //variable almacena los datos ingresados por el usuario
 
-    private string input;
+    private string keypadText;
     //variable con la respuesta correcta,el tanto de las cartas.
     private string respuesta = "3332";
     //obejto para controlar la llave (activa o desactiva la llave en escena)
@@ -29,10 +29,10 @@ public class LVL1Cartas : MonoBehaviour
 
     }
     //ver que implementamos si es correcto el codigo y que pasa si esta mal
-    public void readInputCode(string s)
+    public void readtextCode(string s)
     {
-        input = s;
-        Debug.Log(input);
+        keypadText = s;
+        Debug.Log(keypadText);
         if (s == respuesta)
         {
             Debug.Log("codigo correcto");
