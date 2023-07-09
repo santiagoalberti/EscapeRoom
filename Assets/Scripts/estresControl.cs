@@ -23,7 +23,7 @@ public class estresControl : MonoBehaviour
     void Start()
     {
         energiaActual = energiaMaxima;
-        Latido.pitch = 1;
+        Latido.pitch = 1.5f;
     }
 
     // Update is called once per frame
@@ -35,19 +35,21 @@ public class estresControl : MonoBehaviour
     }
     public void reducirEnergia()
     {
-        energiaActual -= 2f*Time.deltaTime;
+        energiaActual -= 4f*Time.deltaTime;
         Debug.Log("tengo" + energiaActual + "de" + energiaMaxima);
         barraVerde.fillAmount = energiaActual / energiaMaxima;
         if (energiaActual <= 50f)
         {
             estallido.SetActive(true);
            
-            
-            
+
+
+
         }
         if (energiaActual <= 25f)
         {
             estallido.GetComponent<Image>().color=Color.cyan;
+           
         }
         
 
@@ -69,8 +71,8 @@ public class estresControl : MonoBehaviour
         }
         if (energiaActual<25)
         {
-            Respira.Play();
-            Latido.pitch = 3;
+            //Respira.Play();
+            Latido.pitch = 1.8f;
             
         }
     }
