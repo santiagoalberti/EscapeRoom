@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -424,15 +424,15 @@ RectTransform:
   m_GameObject: {fileID: 757847753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3.6374, y: 3.6374, z: 3.6374}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 838011555}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 20, y: -723}
+  m_AnchoredPosition: {x: 20, y: -837}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &757847755
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1\xA1\xA1UPS!!!!  TO STRESSED!!!"
+  m_text: "\xA1\xA1\xA1UPS,TOO MUCH STRESSED!!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1734a913e7ff0442858529561d53e78, type: 2}
   m_sharedMaterial: {fileID: 9132459480511787829, guid: c1734a913e7ff0442858529561d53e78, type: 2}
@@ -779,8 +779,8 @@ RectTransform:
   m_GameObject: {fileID: 838011554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.22468, y: 0.13210286, z: 0.22468}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 757847754}
   - {fileID: 309513027}
@@ -790,7 +790,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 1920}
+  m_SizeDelta: {x: 4724, y: 4724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838011556
 MonoBehaviour:
@@ -813,8 +813,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: a4026d9ec34bacd42a97c0a20bfa980a, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
+  m_Type: 3
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -857,15 +857,15 @@ RectTransform:
   m_GameObject: {fileID: 861337248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5.4754, y: 5.4754, z: 5.4754}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 309513027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.001083374, y: 377}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861337250
