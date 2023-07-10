@@ -31,6 +31,8 @@ public class GameOver : MonoBehaviour
         {
             brain.SetActive(false);
             rip.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     public void backToMainMenu()

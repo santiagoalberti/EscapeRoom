@@ -8,6 +8,11 @@ TagManager:
   - Fire
   - Key
   - brain
+  - Keypad
+  - DogsPicture
+  - CardsPicture
+  - Keypad2
+  - Linterna
   layers:
   - Default
   - TransparentFX
