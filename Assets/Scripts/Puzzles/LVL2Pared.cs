@@ -8,7 +8,7 @@ public class LVL2Pared : MonoBehaviour
     //variable almacena los datos ingresados por el usuario
 
     private string input;
-    //variable con la respuesta correcta,el tanto de las cartas.
+    //variable con la respuesta correcta,el año del crimen.
     private string respuesta = "1234";
     public bool secretDoor = false;
     //obejto para controlar la llave (activa o desactiva la llave en escena)
