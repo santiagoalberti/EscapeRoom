@@ -35,7 +35,7 @@ public class estresControl : MonoBehaviour
     }
     public void reducirEnergia()
     {
-        energiaActual -= 1.5f*Time.deltaTime;
+        energiaActual -= 0.80f*Time.deltaTime;
         //Debug.Log("tengo" + energiaActual + "de" + energiaMaxima);
         barraVerde.fillAmount = energiaActual / energiaMaxima;
         if (energiaActual <= 50f)
